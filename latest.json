@@ -1,23 +1,23 @@
 {
-  "version": "v0.1.0-beta",
-  "notes": "Release v0.1.0-beta",
-  "pub_date": "2026-03-06T16:08:42.904851Z",
+  "version": "v0.1.2-beta.2",
+  "notes": "Release v0.1.2-beta.2",
+  "pub_date": "2026-03-07T21:26:47.294485Z",
   "platforms": {
     "linux-x86_64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.0-beta_amd64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczlLMWVndXBQbldSa3VNY3ZISHBBR1J5SlJYRzhaV1ZKVEpVNS9ZODFuS0hKQkVkOHlTd2RiV0FucUZqS1FCcGxDZjkwSkt6eS9GQnJ0SWFmODZsNnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODEwODU5CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMC1iZXRhX2FtZDY0LkFwcEltYWdlClhpblRlTXZZTHBpU016R0hIR0k0Vis4dHVjNVpPT1VaamQvclRKRDluczBIaittblBwcDJ1WjhFSEEycTZYTGdXTWp0eTBPaXIyMW5EUmRadlZ3b0JnPT0K"
+      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.2-beta.2_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczJwVzhaMmw0dHVFZjk4NVB6N1FLR0Jnem5qb2hETnNiR3ZNU01wVVJ1ZmI0bUJFT3hraG1rcXg5ZnhsYWhvTFFXTVRLZ2VxSFVZaVRKZjZzV1IzSUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTE3NTc4CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMi1iZXRhLjJfYW1kNjQuQXBwSW1hZ2UKcndHMllTQUdvSHk1MTFLeUJEV0ZQSk9pU0RLM0F2WEEyOEFEWXRmSkpsNng4YzBzelhLcGtRK2JkaDgrdlh1N1FkU3BZSExvVUgrbW80eTc3V2g5Q2c9PQo="
     },
     "linux-aarch64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.0-beta_aarch64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczBibmtOOVYveVplOTZxTllzaGZFRFQ1RFlQcHJiTjgxdGtwdk1JRXI5S2U4OWxlVm12M01lYS9keUQ2c1FkS1AzcnJzRlBUVTNsbFI2OG82cjZkdlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODEwNjYyCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMC1iZXRhX2FhcmNoNjQuQXBwSW1hZ2UKcjNhUjFPaHo2N01XM1pOOVA1MXlraWYwd3pIeDEyNW5PU2RncWVHOWxDWmVsT0pwSlM4WFp2cXlLVEovaFVvYUJaNlI2QkJWdDJ5aWxya2RzZ2tjQ0E9PQo="
+      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.2-beta.2_aarch64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3djWHh3azdoZWZhdWVWd1ExU1RWRGtWc2V2djRiNVliSFFJbVBCM0VGU1VsNkJnTHdGUHB1U0orbXZHUzZVOWJNOXJPbUVCWkkwRTRGbUJpNm55VkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTE3NTY4CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMi1iZXRhLjJfYWFyY2g2NC5BcHBJbWFnZQppNWVUOCtNbmxCb2lrbmU5aDRlakhHWlIvWEV0ZW9CRzA1TmVsc3NhSFF6OURXSVVWaXVtOVZKakFUV3pCNUhEdnRsb04zWUtxRGI3R0l6MGs5S25DUT09Cg=="
     },
     "windows-x86_64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.0-1_x64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pczhzb0N3SW5mRWZhRGIrbXdiMWNjUi9IN2RhNUZqQzgwKzVobi83YnlWNG1EZXFKZGNTUUR5WndxRE16dnlJcGtPM2pOb2xjdjVEdlNqMUdqeE9zTHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODExNTE2CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMC0xX3g2NF9lbi1VUy5tc2kKMFdXMkNyd0pMVncwK3UzbkdCWVJnd2tXb1AwWVQySnljNTAxMUlqNFMxZmhnSStXTDlKTnBrNXdOSVZvSjJMUmYxdWI0TzNwZGU1Y2xzUG84RW1PQUE9PQo="
+      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.2-2_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczlIMjFxMWtURDZycUJLL2xjeW4zc0NESnpDcHpjS0RrbTBLTXdhOEZjNmo5L1FvTXFIbXRNb2o0NWFDR0hSUExNcUI4RFlxWkRCYmRFOHoxSmh1d2dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTE4MjcwCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMi0yX3g2NF9lbi1VUy5tc2kKaDQzZUx4bGRrdXloeFlJcUVMVEY5dGt6R3FIWGdqYU80NXpPRDNyTDVtUkVJbUVXZHdvb1E5aXFQL3BvQno4VXRLWUNDdFVYR0tLYmFTN2drVFltQUE9PQo="
     },
     "windows-aarch64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.0-1_arm64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczhtSGN6dEVIQzNwTlI2UGpjNCtmU20xdlVDakgrQmc0MHFLQ3pjTFN6V3hQWEYyWWRVT2piN3R4ckkydDFKamxvcVpmK2lIMHg5K1FJL2hRQ0RJbmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyODExOTQ5CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMC0xX2FybTY0X2VuLVVTLm1zaQpJeklOVEJjdWY1VWI2bUI3QUM5S3FBV0ZvMXU4OXFmTzJ5bDE4ZmlUVlppb01oTVgyakZNNkJnQzFEaG1zOEd5T2hma29YZ3UyS3JQTUx6dXp0ZVVEZz09Cg=="
+      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.2-2_arm64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pcy92eXpDT3ZsT2RYWmpGQnlRQXBQeXJpSDZ4RlR0a3dkSUtGcEZrQUxBaGdWNGVvVExDajU2YlhQM09scUlmaTFHMzVDRFlMRmpVckhxay9SbHFVWkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzcyOTE4NzAwCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMi0yX2FybTY0X2VuLVVTLm1zaQp4dEZ5SmNzYnRpL2ZEQlNwM1ZXL1ptQnQ5Qks4V0ZEc3N0ZjF2U1dpT2thUzh5Q2RKcnJranc3cjVDOEppMkpMeEZJM2ozd0pkenlDUUw4SUZlZVZCdz09Cg=="
     }
   }
 }
