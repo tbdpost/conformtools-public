@@ -1,30 +1,30 @@
 {
   "version": "v0.1.4-beta.5",
   "notes": "Release v0.1.4-beta.5",
-  "pub_date": "2026-03-29T17:23:28.802103Z",
+  "pub_date": "2026-03-29T17:31:58.273166Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-beta.5_aarch64.app.tar.gz",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-beta.5_aarch64.app.tar.gz",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3d5Z2huT3dhYTRsVFY2N3c2QTQyRlBaRUxFWVNhU3ZGTUVpZk05T3JqdW42VWowaHdyK3Y1SSsySllJRjkvL0diWkh5enc0NUpuWTE3bEhWNHVTbXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0ODAwOTMzCWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6CndwWUpTTmo0eVFXdnRTaUpqcmdSdGlvRmZvQlkyamNvOEttQTJodDUxcVdsZzV5YUtoVTNzc2lLWnNwTVVUYW5sRndQVyswcGFJTU9XRXBXNmFaVERRPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-beta.5_x64.app.tar.gz",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-beta.5_x64.app.tar.gz",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3hoL3M5dnV6SUR0aHJwdlhhOWR5d1ZnUlZnWmliRDd1MDIyR1krS3k5SGZoVmx2a2dOWVpkWlJPMlpGTTkyLzBreFhOYWR1ZmFTR3NYR05uVUNOZndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0Nzk2MTk2CWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6Cm9iVnF1bHFnTFhjeGNNZGt1M0dRR1Fzc09BMkxzeW1MRmlVempRYnE2UE42bktzYytZd2Z0bk5hci9WeWt1RWVXZXV1aHNmVEw5OE9ObkhyNFZsY0NBPT0K"
     },
     "linux-x86_64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-beta.5_amd64.AppImage",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-beta.5_amd64.AppImage",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczBZODk0N1Y3NW1uMlIvaEVBWjFINXQxMHlxVXplbFFUQU1ZMEVobG9tNi9zZ3d6WmZzUWtRUEVRYzgvcVJITTRVQ1dJWFhtdjlUTFlDZ25WQkU4Y2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0ODA0MDYxCWZpbGU6Y29uZm9ybS50b29sc18wLjEuNC1iZXRhLjVfYW1kNjQuQXBwSW1hZ2UKU1dXS1NuTDBkTml0T3RhTnlPZEZLcFQybUVmTHRRbzBCNkwzUjRTd2NtK1lsMXVKMWEzUWdnMmF0NVZQQmovekE3bGdaRldzam5LeEFVSW9yY0xZQnc9PQo="
     },
     "linux-aarch64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-beta.5_aarch64.AppImage",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-beta.5_aarch64.AppImage",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczY1bEZnZUJudG01VDJvakd4bWVYWnRYRVI4NzlXNFdKeDI2a3luUHZGUm1sc0s4Qm5MOURyTiswSEd4RUVjaXM3STZkWHVUcEc0dDhxV05oa2M0bWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0ODAxOTg1CWZpbGU6Y29uZm9ybS50b29sc18wLjEuNC1iZXRhLjVfYWFyY2g2NC5BcHBJbWFnZQovUmdIanNhcnhEdGRSMVg2VUFqYXZrcmg4eUx0V1paOFdZMksyTDBjcXNCRXUxQ0RqeldYSWVJMmFLZnJKTUl6V201QVRQS3IvWDBGQnI3L3p6YytDQT09Cg=="
     },
     "windows-x86_64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-5_x64_en-US.msi",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-5_x64_en-US.msi",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczRhU2I1bjZ5ai9YUWVSUTVxOFFCR001YklKeVA0R1ljU29RYjBrNkk3cURLbmFabDNnbWxpOXZnblY1M1FjRGtkdzNoNWcwdEV4V1RPNFhzZUZnN2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0Nzk2NDMzCWZpbGU6Y29uZm9ybS50b29sc18wLjEuNC01X3g2NF9lbi1VUy5tc2kKUHArUW12Q1FVT2srVGY3T09UVHlybCsxbXllYmpzWGhVb2xwaWdSc2cvOEdzL1BXdFJ0c3Q2RXNZRDVMWGFMTklYZ3NZbnBVdGpwODZkald6elVSQmc9PQo="
     },
     "windows-aarch64": {
-      "url": "https://storage.conform.tools/conformtools_desktop_app/conform.tools_0.1.4-5_arm64_en-US.msi",
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.4-beta.5/conform.tools_0.1.4-5_arm64_en-US.msi",
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3pUV2ZlQkI1djVJQTl6bFVZNDl3LzMycjI3bmN1M1lyaENIMmVscm1WazZMNkhpREFDZTE0c25FbmVrdHFsVXR1dVhRTXpXc05yMWR3bjVHdnZBWHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0Nzk2NjY4CWZpbGU6Y29uZm9ybS50b29sc18wLjEuNC01X2FybTY0X2VuLVVTLm1zaQpzeXlJaEJmTTJHSm80L25YM2kySGtBZzlVeU5lZXowbk5ma3dyTWtKZVkyYTNHaE5xbXJZdnNVMkhsc1dkMUdJcWw4RHlJdTl6TkVVNGJpb2Y4dEFDdz09Cg=="
     }
   }
