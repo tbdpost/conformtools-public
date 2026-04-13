@@ -1,31 +1,31 @@
 {
-  "version": "0.1.13-1",
-  "notes": "Release v0.1.13-beta",
-  "pub_date": "2026-04-13T00:38:51.879545Z",
+  "version": "0.1.14-1",
+  "notes": "Release v0.1.14-beta",
+  "pub_date": "2026-04-13T02:53:37.918640Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-beta_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pcys5ZUZMY1hUZlhhS29nc0hSbUxBT0UxV1RUSWY4Y2NZcE1ncHpRSmlraU5uc2dpNGRXekZaRjQrSUx1R1VGeFJVOHhPdlNpSlVHcHZZNFI5Z0s5eGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDM5Mzg1CWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6CngyeUtBRnREbnhvZUU1Q3RGRXlmYnZGUTB4SHdvVUFvZkhZalRoOC9Lc1lsSmcxSCtqNWRBVUZpSmFHK0d1SFFPZWdQd0swdGJJNWs1TzIrZHgvZ0NBPT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-beta_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3dXSFdtV3Y2TVBSNGVSYzVaTGtpdGdDcXpSdkJSWFJzTGFNS2tpNyszZk9QNERiakJJS1A4R2FUWU5JME5EaHJ4UUFyeVk1aDBFNm83RzY1MU5OTEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ3NzUzCWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6ClpjYTAzRFhvMUZPM3J5NDBjbHNiWmV3enFRMGVIUFNnY2JRZ0xNN3lRRnorc2RrS2FKOHBsQ3U4N1VsZjVJb1pOY0ZVQ3VwZnlGSEJmUVdSdEp5U0NnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-beta_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PcytSU0NraVp0Qk9SUmhmcGg1SnlUbEFNS0JoZ3VVbVJScEtSbnJpN25UZjdvWEFxbm53NGdzanpJcmhsN0cxY0xtSWs4TjBLamh3UWRESWhkTmlrNVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDM5NTk2CWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6CkZwVExOY21YQVNWRzZ3ZlRMMjBQZ3hrV1N6ZVJGdGl5Zm9vMUhtbXJmTm9mdXVHL1lQQXJ2Qnk0aUZ2eUIxVkt0cUFuVm81V0dXZ25hbXE3eGlPUUF3PT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-beta_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3lwRkZmZUl3TG1vcmQ1bW5oc3NWaUZrendzWVpOVm1RQllkRGUydGpvNW1HUzJ6RXVGK3drQ3pETlhTd2NTcnQxRnBydWtGVmpyNmI4TlRleUwzRGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ4MzYzCWZpbGU6Y29uZm9ybS50b29scy5hcHAudGFyLmd6CjMyNVVYTUI4WHdIVEtCKzJDMnhYNG5oc21PRUs0WXhuNjg1ZHByRGxnZStXMi96M2JmTElaWVlnS05JZFIvdnEzd2VuNnN4bU5RR3Z6b01FaTJjekRnPT0K"
     },
     "linux-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-1_amd64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczBidmIybzhnS1NRTmU1MlNvRC9uTmFENTd5bngyYkFQalNBcU5IMzA1azJFY0s1TWIrN21xMDFKRlBIU1JGRnRlYTNoMDNaYVpaRUhQOEduZ1F1U1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQwNDkyCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTMtMV9hbWQ2NC5BcHBJbWFnZQpURmtYTHJIOVBNZ1JJNkUvYm5hcHh1TWIyYS9yOFZRZEt5dFhuK2pyNHZ0T0N0TGM2KzdHOXFNNHo2eUIwOEQ5VTdFQ0dxYWFRTXpDUEdoQW1KclBEZz09Cg=="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3dxbWpvUkNsMU5qdzhTQnV5WXhWV1lNelRoK2tEcjVpdkQzMzdBQTY3TnNyYVRLZC96clpya21xL0xXbmk4Y1NJQmRxcWdqMzhSaEdnSTIwUEZROEFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ4NDE3CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTQtMV9hbWQ2NC5BcHBJbWFnZQpEUkFnZTNiOTFkeWNWbGI1WEFjaDlFNWY0VEsyREM1TDZEZzh6VjNUaWI4eGd5SVkxcmM1bkxPbVNsMkJIZm5YcVdhaXlzam8xMzNDdktENHFUMUlEdz09Cg=="
     },
     "linux-aarch64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-1_aarch64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3pHS3N4WGI5YjI4UC85dEprd2VSOW5zNDJrQnpRS2FETkRWQTA1VklGcXoyYlNmajdDSkpYaFNLN211RVFUcHBpcS94TWxJREpKTFFEUEtaZ3o4NFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQwMDQ2CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTMtMV9hYXJjaDY0LkFwcEltYWdlCmw2eEVURnVaeVlaTUFsbjhCZlZkNXFxTFdnL1ErV21GYUt4a0xKVktzVExuWjVKTkloMTlUOHFOVEhFTzBwc24rVksrdWt1N0NHQlFaNkxmQ0lndENRPT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-1_aarch64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3krZzJSWTNUL29welRjcXBwYy9Vd0JXWGRuVzk2SzgwOWpGS3VobjRHVWprT1NtQUdBdXMxMjZlL3JSWDdaVW9obzhjYWlnOHYySGhQcmxRSUNNZ0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ4MzY3CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTQtMV9hYXJjaDY0LkFwcEltYWdlCkViN3AwVjhuQnBSZENuM1lpK20xRTlRV01yNmdhNnU5MEVOY0Nha20xM1I4ZHpsZE5FeFpJMTBqSFJub2o2a1hiREdFN0MrOWdLY2dkRzQvUnNUYkFRPT0K"
     },
     "windows-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-1_x64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczN0UTlndEZrNmVxYk4rWXNmZk5SMDNSK1FhYVdoMDhxVEtDNE1KdnRoQVhxRTZ5RTROV0FPbW8xazNCY1F4QVBoTHBrUFNIS28wNThLeWRKYnppSlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQwMzMyCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTMtMV94NjRfZW4tVVMubXNpCnY1MHBSeEQ0aXMyU2xSNERzWVFOa08zSVhUeHdOMTFVV3hVLzI5NmoxNHllbVJpeE1DOTc1LzhkcGYxZ2tKRXBBL3lGRWdlN1pCenJKbTNuYk5UWEFBPT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-1_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczRaZXpPS0FmdGtYNzdGMnRxZ1R2YUM4NXJ4OU5MZzVSN2pBV2JaY3BHRW85RXFOSU53U2NRWnJhL1doVUJ2NGdxUnpDRjFmZFVQVmd6b2JYb1ZsdFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ4NjQyCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTQtMV94NjRfZW4tVVMubXNpClRDRGF0Zm54K2xhN01xVG05WVF3NjNYVDduSGtTZHczZWhScFg4OU9CUTErc3pUL2xpNGVzQXVLbmkzMXIwcVk2em9MTkR0YlpkR1NERkVlWStZaURBPT0K"
     },
     "windows-aarch64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.13-beta/conform.tools_0.1.13-1_arm64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3hXeUx0THFDZ0RGalZNSENaMGpHb3U1SFJzVzJCNkNrRTdhYVVKb2xZZkVwMUNBYk5wanU0OXE0QW5YSTE1OEVMWVpUazY1cVoyOEd4Y0c4cHZIbUFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQwNDc4CWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTMtMV9hcm02NF9lbi1VUy5tc2kKU2Z2QWtZaTgxNVpGQk42OHRiMnUweDN4aDNPMEJJN2ZQSFRLVTA5RXIwNFZlLytqT1JrY2pqa1lCcm1HMTl6T1h5V1JlaEsrMEZaLzY4MVB0NlFLREE9PQo="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.1.14-beta/conform.tools_0.1.14-1_arm64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pcy9XNVVaN2tFektKWTRBeWJUNHp2OHZaVndBWmlhUnBQaXBwc25wempBOU1jY2dpSlg2endGbDlMcnZ3OHA2L0xJQlh5VkptR2NaVmkvdTU2MVEzcWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc2MDQ4NjczCWZpbGU6Y29uZm9ybS50b29sc18wLjEuMTQtMV9hcm02NF9lbi1VUy5tc2kKVk9oZ1BZZUNmV0liZHUxUUQ3QVozb0JjRkxqb3NHMlhBQ0hNU0RHODdKa2xNdnJ4M29meHhCbFl0eG1rbzlheHQ5S1dZWXB5ZDFxc1EwMXNYZGs1Q0E9PQo="
     }
   }
 }
