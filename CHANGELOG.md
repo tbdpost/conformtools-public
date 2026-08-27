@@ -2,6 +2,23 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.3 - 2026-08-26
+
+### Added
+- **Marker Batch Renderer**: Handles - add run-in and run-out (in frames or seconds) to every marked section you render. Remembered between sessions.
+- **Marker Utility**: Edit Markers has a tick box for Name and one for Notes, so an Apply can change one without touching the other; an unticked row is greyed out. The floating window has the same.
+- Every list: drag a column header onto another to move the column. The order is remembered per tool.
+- **Edit Index +**: right-click the V / A / Trans / Key filter chips for a menu that says what each state does in plain words.
+
+### Fixed
+- **Edit Index +**: the batch-action pop-ups (Keywords, Marker, Group, Comments and the rest) no longer disappear when you click into their text field; Escape closes them.
+- In-app feedback: reports reach the team again - they were being shelved when the attached error log was too long for the tracker.
+
+### Improved
+- **Edit Index +**: Keywords, Comments, Scene, Shot and Take cells open for editing on a double click, like every other editable cell in the app.
+- **Edit Index +**: click anywhere on the Actions header to expand or collapse the panel.
+- Feedback: the thank-you screen offers "Submit another report" and nothing else.
+
 ## 0.7.2 - 2026-08-26
 
 ### Improved
