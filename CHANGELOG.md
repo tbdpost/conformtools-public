@@ -2,6 +2,20 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.4 - 2026-08-28
+
+### Added
+- **Edit Index +**: Grade Version batch action - switch the selected clips to a local or remote grade version by name, or add a new one to all of them.
+
+### Fixed
+- An offline license signs you in: with a valid license file in place the app opens straight to the dashboard, no login screen. Importing a license activates it immediately.
+- **Copy Grades**: the floating window reported "Copied: 0 clips" for copies that had worked. Every Copy Grades control now reports what actually landed, and a copy Resolve accepted but could not be double-checked is reported as copied with a note instead of as a failure.
+- **Edit Index +**: Copy Grades on a selection now copies (it had been failing silently with a count of 0).
+- Settings: the update download bar no longer appears to run backwards before it starts filling.
+
+### Improved
+- Every track list in the app - pickers, popovers, floating windows - reads low to high: V1 first.
+
 ## 0.7.3 - 2026-08-26
 
 ### Added
