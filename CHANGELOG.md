@@ -2,6 +2,20 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.6 - 2026-08-31
+
+### Added
+- **Marker Batch Renderer**: Artist Initials fill themselves in from your account name - Brandon Thomas becomes BT - until you type your own.
+- **Marker Batch Renderer**: Handles now save and load with the naming preset, so a delivery spec carries its own run-in and run-out.
+
+### Improved
+- Handle fields in **Add Handles** and **Marker Batch Renderer** have proper up/down arrows, take the up/down keys, and scrub with the mouse wheel.
+- **Marker Batch Renderer**: Handles are set in frames only - the seconds option is gone. An existing setting in frames is carried over.
+- **Add Handles**: the new timeline says which way the frames went - `_4FR_HANDLES` when adding, `_TRIM_4FR` when trimming - and a count of 0 is refused instead of quietly duplicating the timeline.
+- **Add Handles** is called the same thing in the sidebar, the Utilities gallery and on its own page.
+- **Marker Utility**: the Flip-to controls show the marker shape instead of a round dot.
+- **Marker Utility** floating window: the colour list opens across the window instead of running off its edge, so you no longer have to resize the window to pick a colour.
+
 ## 0.7.5 - 2026-08-30
 
 ### Added
