@@ -2,6 +2,20 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.5 - 2026-08-30
+
+### Added
+- **Add Handles**: a negative handle count now trims frames from the head and tail of every clip instead of adding them - the new timeline is named `_<n>FR_TRIMMED`. Clips too short to survive the trim are skipped and reported.
+- **Marker Batch Renderer**: Handles can be negative too - each rendered section loses that many frames from both sides. A section shorter than the trim renders its middle frame.
+
+### Improved
+- **Marker Batch Renderer**: the Handles setting moved up beside the filename preview and output folder, where the render range is decided.
+- **Marker Utility** floating window: the Flip-to control shows just the target colour (its name is in the tooltip), and picking a colour opens right at the control instead of at the top of the window.
+- Every tool's list keeps its column headers solid while you scroll - rows no longer show through them.
+
+### Fixed
+- **Timeline Exchange** (offline): conversions failed on a fresh install with a "No such file or directory" error before ever reaching the converter. They work first try now.
+
 ## 0.7.4 - 2026-08-28
 
 ### Added
