@@ -2,6 +2,31 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.7 - 2026-09-01
+
+### Added
+- **Blanking Detector**: black frames - frames with no picture at all - are now found and marked in their own colour. They were being measured and then reported as clean.
+- **Blanking Detector**: re-run a scan and any marker whose blanking is now clean turns green, with the original finding kept in its note. **Clear Resolved** removes just those and leaves the open findings alone.
+- **Mapped Mounts** (Settings): rewrite media path roots that came from another machine - `/media` becomes `/Volumes`. On by default on Linux, and available everywhere. Applied to the media in converted timelines; only whole mount points are matched, so a folder like `/mediafiles` is left alone.
+- **Aligner**: a new **Verify & refine** mode re-exports each clip after aligning it, measures what Resolve actually produced, and corrects anything still off. Slower, and the surest way to land on mismatched resolutions.
+- **Marker Batch Renderer**: unlimited custom fields, offered first in the Add Field menu.
+- **Marker Batch Renderer**: each field can set what joins it to the field before it, so a field can attach straight onto the marker name.
+
+### Fixed
+- **Blanking Detector** now catches a single pixel of black at an edge. At the Strict setting one pixel was being ignored and two reported, which is the wrong way round - a one-pixel edge is the most common blanking error there is.
+- **Blanking Detector** now catches blanking revealed part-way through a keyframed move. The expected-aspect-ratio setting was quietly discarding any small reveal that still looked about the right shape - so an animated error on a 16:9 timeline set to 16:9 was never reported.
+- **Blanking Detector**: the strictness sliders now actually reach the scan - a single-clip scan was ignoring them and running at its own default.
+- **Blanking Detector** reads animated vertical zoom and animated crop correctly; both were effectively invisible before.
+- **Aligner** now lands correctly when the footage, the timeline and the reference are different resolutions. The measured offset is converted into the timeline's own frame instead of being written as-is, and the timeline's output resolution is read rather than the project's.
+- **Aligner** adds its correction to a clip's existing reframe instead of overwriting it - a clip that had already been repositioned no longer jumps somewhere else.
+
+### Improved
+- **Edit Index +**: the tools column (Align, Fix Blanking, Navigate) can now be moved, hidden and brought back like any other column, and it saves with your column presets. It was the only column that could not be.
+- **VFX Pulls**: the shot list is a real list now - sort by any column, resize columns, and drag column headers to reorder them, like every other list in the app. Custom names are edited with a double click.
+- **Aligner** reports the project's mismatched-resolution handling and any per-clip Scaling override, so an odd result is explainable.
+- **Marker Batch Renderer**: add, remove, rename and drag filename fields on the tool page itself - no trip to the settings page.
+- **Marker Batch Renderer**: the handles preview only appears when handles are actually set.
+
 ## 0.7.6 - 2026-08-31
 
 ### Added
