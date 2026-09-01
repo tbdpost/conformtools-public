@@ -1,31 +1,31 @@
 {
-  "version": "0.7.6",
-  "notes": "Release v0.7.6",
-  "pub_date": "2026-08-31T06:28:56.299009Z",
+  "version": "0.7.7",
+  "notes": "Release v0.7.7",
+  "pub_date": "2026-09-01T09:05:44.242976Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/CONFORM.TOOLS_0.7.6_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczNTbFBtdVhxTDNIVVZvOVRNY1NlMlBtSnBiT1B1WElXUGRITndUb0dDR2s0U0RXdEdCd3BTdGxpZjZlaHV0bUlBdDdTQW1uSVdJN3R4N2dHOUNxeUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU1OTUxCWZpbGU6Q09ORk9STS5UT09MUy5hcHAudGFyLmd6CmxTaGJCbTNob25nUUphemtjNEUyL1RIeUU5SEVzVmhCcEw0UjlDRE1BcXdDbmdYN0xhU3p2ZmRDN1g1VE1MNUdDRkNhVEFSMnNzZytORVdqL2wvWEF3PT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/CONFORM.TOOLS_0.7.7_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3pNUlpVRWhmam1hQllrWVRCZ3gxczVGdTU2eThlKytjSktoZytlMW1uUVlTMGdZMFk0SUpyaG90eHNSY1ovcFpjWTFTRmMyQlFmYWNyYTFYM2NQa3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUxNzc0CWZpbGU6Q09ORk9STS5UT09MUy5hcHAudGFyLmd6CmxGSFRJRjNCVlEwTG9kZkpCejhxVHRaWm5wam1CZ3hQSEJTaUNEaU05d1R5d3JEME5LNFlhaTVNQ29ISTNPdG41Yk4zNVlFK0I3eWNwcjNlcWZkUURnPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/CONFORM.TOOLS_0.7.6_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3phRzZJRHNKTXYyQkt3V1kyZzZ6TmlhRDNtOTlkd0xGYkkzSUlwZEo0a1BoTDIwZEV0YkNRTVd3Vys2N0hrNGh1SEc4NUZHZ1FCNHRxVm53QU5VMFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU2NTg4CWZpbGU6Q09ORk9STS5UT09MUy5hcHAudGFyLmd6ClZtb0pJS1pFSHB0L1Fob1dtcTdZd2lBTTI4S0JhVzdDUDNTUUhwaUk1eGRlWDZCT2g0TGtXckRqVW5HOGovdHBsU00wTlVGc3pBL0p5N2hUOEZSRUJnPT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/CONFORM.TOOLS_0.7.7_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3lOWFRKTUFHSlZSUmFrNnNvMEdFQk9YZ0l6cmlLVFR6NVpsTHR4cWtxVjMyaXJvMWNDYThuMmViUHhRQzBSWEVmYjBMN1BhNUZkWFpMcEQ2bFJGVmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUyNDc5CWZpbGU6Q09ORk9STS5UT09MUy5hcHAudGFyLmd6Cld6d3ppTUdsZkJkbVRScXFuZlY0YUpNV0ROQUZrbFRIa3JvTTZBbTBpUU82YnBOaVZLeEdaeE41WWZaRmNoRGhWRTUvajA5TEh5SVFuUG85VkJQZkR3PT0K"
     },
     "linux-x86_64-appimage": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/conform.tools_0.7.6_amd64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3d4cjhUa1Jrc2dTVU8rZDN5VHVPTHlGckd6WHF0SHZTYjJZTnhqS3d5UEtVRHVVNi9xVU9oRFhmdk9MWE84NjNQUm1TNlhSb3VXUTVCYTJIT1NHNXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU3NDI1CWZpbGU6Y29uZm9ybS50b29sc18wLjcuNl9hbWQ2NC5BcHBJbWFnZQpTRHo0S0UyditUQXNzZEVaTGhHZ1Qyam9qbTdJbDhOa3ppd3pCZmEvRzVSZVVtb1ZtU0pubDdkRFRuakZ2VnQzRVprMjJyaTdSOTNQUVkzWkFpOXJBUT09Cg=="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/conform.tools_0.7.7_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczJPMjMyeDBiTHAwYUx6RGtVZVByL2ZCcWxYeGtFTi9jL1VNVXVQRzJtcVZWcy9oTW1JWjNLb3pPQVFtTzJmUFNiejR4ZVBXS3VNdVhXdTErbzlKK2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUyODg2CWZpbGU6Y29uZm9ybS50b29sc18wLjcuN19hbWQ2NC5BcHBJbWFnZQpob0VoeG5Ub29qenllL1h1QXpqajlwM1JVRmpkd0VKbHAyRjJnRVlqVlBlM0I3UDZTcUNZNyt5Rml6OUZ1ZEdZTGNYdENOb1Rha05qVWt3aEMxTzRCUT09Cg=="
     },
     "linux-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/conform.tools_0.7.6_amd64.AppImage",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3d4cjhUa1Jrc2dTVU8rZDN5VHVPTHlGckd6WHF0SHZTYjJZTnhqS3d5UEtVRHVVNi9xVU9oRFhmdk9MWE84NjNQUm1TNlhSb3VXUTVCYTJIT1NHNXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU3NDI1CWZpbGU6Y29uZm9ybS50b29sc18wLjcuNl9hbWQ2NC5BcHBJbWFnZQpTRHo0S0UyditUQXNzZEVaTGhHZ1Qyam9qbTdJbDhOa3ppd3pCZmEvRzVSZVVtb1ZtU0pubDdkRFRuakZ2VnQzRVprMjJyaTdSOTNQUVkzWkFpOXJBUT09Cg=="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/conform.tools_0.7.7_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczJPMjMyeDBiTHAwYUx6RGtVZVByL2ZCcWxYeGtFTi9jL1VNVXVQRzJtcVZWcy9oTW1JWjNLb3pPQVFtTzJmUFNiejR4ZVBXS3VNdVhXdTErbzlKK2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUyODg2CWZpbGU6Y29uZm9ybS50b29sc18wLjcuN19hbWQ2NC5BcHBJbWFnZQpob0VoeG5Ub29qenllL1h1QXpqajlwM1JVRmpkd0VKbHAyRjJnRVlqVlBlM0I3UDZTcUNZNyt5Rml6OUZ1ZEdZTGNYdENOb1Rha05qVWt3aEMxTzRCUT09Cg=="
     },
     "linux-x86_64-rpm": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/conform.tools-0.7.6-1.x86_64.rpm",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczhRK3JHS3A1MTM0RTJIVzRFU21FcnJuU29ONW1MUTNBK3c5RU85OENYeldMRjFTQXV3VUhTU0ttdzdab1ZaQ2Q0clRmZWwxNWxwcGwwbUhhNjZDRVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU3MzAwCWZpbGU6Y29uZm9ybS50b29scy0wLjcuNi0xLng4Nl82NC5ycG0KQ0RDK2hzdmJaR3VYRGw1NVdiTEQ5Qnl4emdqLytIc0EzQXY4TnE4U0ZxSFd0TlZodFhLSGJGUUhMSHR2eEJqTkcxS3Z3eTdTWXY0NlRTTEVRbGY2QXc9PQo="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/conform.tools-0.7.7-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczFpN2VXMVlLblpmQVFKVGFQYmc1NmxEdGFOSnMvOUJuTTNJMnhieElkTmo2K0dUdUZQMTJUYm5uU2tWdzFXSXliK3Q4L290dVBzeEJCaDF5dXh6emdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUyNzg3CWZpbGU6Y29uZm9ybS50b29scy0wLjcuNy0xLng4Nl82NC5ycG0KM1VoWSt4Tk1HaTZzbkFWckRhNHRVdHNtbkh0ZGh1YnNsZDBDWGRkaUgwanYxREF6TlJ0aWdTemZHaEMwcFVSbGs0OTB0TGJ4Rnl4R2FvWmlkTW5aQ1E9PQo="
     },
     "windows-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.6/CONFORM.TOOLS_0.7.6_x64_en-US.msi",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pcy91RCtQVUovUEJDY2dFSFRWYU5tT0hFSi8xejVQbE9oTE1QUUxndGg5Z0hqQVdJMGduZTgvTURSM3pnUVRFZmdVUFpicFJ2QzZMWW41MHlJWDJMWHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MTU3Mzk5CWZpbGU6Q09ORk9STS5UT09MU18wLjcuNl94NjRfZW4tVVMubXNpCk9NSmZGTHQ5ZFl0U0t3Ti8zemtVTXQ4Y29Sa0VHd2VoZHB4aDdJdGNCYzRVVU52ckZvZ0xHUXBCQ1FxUzhVODhVRm5CYmJmenNWY3l6aGE2RDVNRURRPT0K"
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.7.7/CONFORM.TOOLS_0.7.7_x64_en-US.msi",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pczd4RzFkKy9iaWFrYm0yaUtURUNCbTYwbHg4c2M5aTE0YW84d2Z1NjJCbVFETlkwWXVwQjh1dGJ6YUNQUHcwNkJNWEhaSDVpb1NYWklqcWdLc2pId3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4MjUzMjM5CWZpbGU6Q09ORk9STS5UT09MU18wLjcuN194NjRfZW4tVVMubXNpCmM5KzU5cTFWU0xXZFY2SVVKY1h2SjhNR0RTSkVPQkc5ZHA2Z3laYmYybzVKelFscSs1N2M5L1BKZTZjV2tIaWlESzVtUGdMcjZOUUxQeS9EMGZmdERRPT0K"
     }
   }
 }
