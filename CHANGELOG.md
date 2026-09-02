@@ -2,6 +2,12 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.8 - 2026-09-01
+
+### Fixed
+- **Resolve connection**: the app now finds DaVinci Resolve when several versions are installed side by side under their own names (for example `DaVinci Resolve 20.3.1.app` inside a `DaVinci Resolve 20.3.1` folder), and connects to the one that is running. Before, only the standard install location was recognised, so those installs showed "Resolve isn't detected" on every tool.
+- **Connection diagnostics** now name the Resolve install actually in use, its version, and every install found on the machine, so a report tells us at once what the app had to choose from.
+
 ## 0.7.7 - 2026-09-01
 
 ### Added
