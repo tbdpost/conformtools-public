@@ -2,6 +2,21 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.7.9 - 2026-09-02
+
+### Fixed
+- **Aligner** no longer marks a shot green when only one frame of it lines up. Every matched clip is now checked at a second frame near its end; if the reference moves between the two, or either clip already carries transform keyframes, the shot is reported as **Animated** in the mismatch colour with the reason in the note - aligned at one frame, the move still needs keyframes.
+- **Image Sequence Renamer** no longer hangs on a large sequence. A 29,000-frame folder used to freeze the app while the preview built; the preview now draws only the rows on screen, and the rename and its undo are given as long as they need on a slow network mount instead of being cut off at one minute.
+- **Image Sequence Renamer** never overwrites a file. Two files that would end up with the same name, or a name already taken by another file in the folder, are marked in the preview (DUPE / EXISTS) and skipped when you rename; everything else still goes ahead. Before, the second file could silently replace the first.
+- **Image Sequence Renamer**: undoing a swap of two names restores them; it used to be reported as already undone.
+
+### Improved
+- **Aligner**: **Reset sizing first** (on by default) wipes each clip's pan, tilt, zoom, rotation and flips before measuring, so sizing inherited from another cut can no longer throw the match off. A clip that cannot be matched is put back exactly as it was, and the result says what was reset.
+- **Aligner**: the results list has a Note column and an animated count, and both new behaviours can be switched off next to Verify & refine.
+- **Image Sequence Renamer**: shifts and renumbers move each frame once, in the right order, rather than parking every frame under a temporary name first - half the work on a long sequence, and a folder is never left holding temporary files.
+- **Image Sequence Renamer**: the Rename button shows how many files are being renamed while it runs, and the preview's Skipped tab lists every file the rename will leave alone with the reason.
+- Every tool's results list handles very long lists without slowing the app down.
+
 ## 0.7.8 - 2026-09-01
 
 ### Fixed
