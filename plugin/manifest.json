@@ -1,0 +1,16 @@
+{
+  "version": "1.4.8",
+  "min_app_version": "0.7.0",
+  "plugin_api": 1,
+  "notes": "conform.tools render plugin 1.4.8",
+  "platforms": {
+    "darwin-universal": {
+      "bundle_url": "https://github.com/tbdpost/conformtools-public/releases/download/plugin-v1.4.8/conform.tools-plugin-1.4.8.zip",
+      "sha256": "04b2f019f98ed422313da31feb4b99687759bccf74cbb74aff5e0c27e5e1c7c8",
+      "min_os": "12.0",
+      "notarized": true
+    }
+  },
+  "bundle_url": "https://github.com/tbdpost/conformtools-public/releases/download/plugin-v1.4.8/conform.tools-plugin-1.4.8.zip",
+  "sha256": "04b2f019f98ed422313da31feb4b99687759bccf74cbb74aff5e0c27e5e1c7c8"
+}
