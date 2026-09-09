@@ -5,15 +5,15 @@ What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https:
 ## 0.7.9 - 2026-09-02
 
 ### Fixed
-- **Aligner** no longer marks a shot green when only one frame of it lines up. Every matched clip is now checked at a second frame near its end; if the reference moves between the two, or either clip already carries transform keyframes, the shot is reported as **Animated** in the mismatch colour with the reason in the note - aligned at one frame, the move still needs keyframes.
-- **Image Sequence Renamer** no longer hangs on a large sequence. A 29,000-frame folder used to freeze the app while the preview built; the preview now draws only the rows on screen, and the rename and its undo are given as long as they need on a slow network mount instead of being cut off at one minute.
+- **Aligner** no longer marks a shot green when only one frame of it lines up. A shot that moves against the reference, or that already carries transform keyframes, is reported as **Animated** in the mismatch colour with the reason in the note - aligned at one frame, the move still needs keyframes.
+- **Image Sequence Renamer** no longer hangs on a large sequence. A 29,000-frame folder used to freeze the app while the preview built, and a rename or undo on a slow network mount is no longer cut off part-way.
 - **Image Sequence Renamer** never overwrites a file. Two files that would end up with the same name, or a name already taken by another file in the folder, are marked in the preview (DUPE / EXISTS) and skipped when you rename; everything else still goes ahead. Before, the second file could silently replace the first.
 - **Image Sequence Renamer**: undoing a swap of two names restores them; it used to be reported as already undone.
 
 ### Improved
 - **Aligner**: **Reset sizing first** (on by default) wipes each clip's pan, tilt, zoom, rotation and flips before measuring, so sizing inherited from another cut can no longer throw the match off. A clip that cannot be matched is put back exactly as it was, and the result says what was reset.
 - **Aligner**: the results list has a Note column and an animated count, and both new behaviours can be switched off next to Verify & refine.
-- **Image Sequence Renamer**: shifts and renumbers move each frame once, in the right order, rather than parking every frame under a temporary name first - half the work on a long sequence, and a folder is never left holding temporary files.
+- **Image Sequence Renamer**: shifts and renumbers are faster on a long sequence, and a folder is never left holding temporary files.
 - **Image Sequence Renamer**: the Rename button shows how many files are being renamed while it runs, and the preview's Skipped tab lists every file the rename will leave alone with the reason.
 - Every tool's results list handles very long lists without slowing the app down.
 
@@ -29,16 +29,16 @@ What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https:
 - **Blanking Detector**: black frames - frames with no picture at all - are now found and marked in their own colour. They were being measured and then reported as clean.
 - **Blanking Detector**: re-run a scan and any marker whose blanking is now clean turns green, with the original finding kept in its note. **Clear Resolved** removes just those and leaves the open findings alone.
 - **Mapped Mounts** (Settings): rewrite media path roots that came from another machine - `/media` becomes `/Volumes`. On by default on Linux, and available everywhere. Applied to the media in converted timelines; only whole mount points are matched, so a folder like `/mediafiles` is left alone.
-- **Aligner**: a new **Verify & refine** mode re-exports each clip after aligning it, measures what Resolve actually produced, and corrects anything still off. Slower, and the surest way to land on mismatched resolutions.
+- **Aligner**: a new **Verify & refine** mode checks each clip after aligning it and corrects anything still off. Slower, and the surest way to land on mismatched resolutions.
 - **Marker Batch Renderer**: unlimited custom fields, offered first in the Add Field menu.
 - **Marker Batch Renderer**: each field can set what joins it to the field before it, so a field can attach straight onto the marker name.
 
 ### Fixed
 - **Blanking Detector** now catches a single pixel of black at an edge. At the Strict setting one pixel was being ignored and two reported, which is the wrong way round - a one-pixel edge is the most common blanking error there is.
-- **Blanking Detector** now catches blanking revealed part-way through a keyframed move. The expected-aspect-ratio setting was quietly discarding any small reveal that still looked about the right shape - so an animated error on a 16:9 timeline set to 16:9 was never reported.
+- **Blanking Detector** now catches blanking revealed part-way through a keyframed move - an animated error on a 16:9 timeline set to 16:9 was never reported.
 - **Blanking Detector**: the strictness sliders now actually reach the scan - a single-clip scan was ignoring them and running at its own default.
 - **Blanking Detector** reads animated vertical zoom and animated crop correctly; both were effectively invisible before.
-- **Aligner** now lands correctly when the footage, the timeline and the reference are different resolutions. The measured offset is converted into the timeline's own frame instead of being written as-is, and the timeline's output resolution is read rather than the project's.
+- **Aligner** now lands correctly when the footage, the timeline and the reference are different resolutions, and follows the timeline's own output resolution rather than the project's.
 - **Aligner** adds its correction to a clip's existing reframe instead of overwriting it - a clip that had already been repositioned no longer jumps somewhere else.
 
 ### Improved
@@ -137,10 +137,10 @@ What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https:
 - Menus, colour pickers and dropdowns open where you clicked, at the right width, and stay inside the window at any UI scale.
 - **Edit Index +**: auto-refresh rescans in place on a schedule you choose (15 s to 5 min, or off) and keeps your scroll and selection; a parameter parked on a single keyframe is now visible and searchable.
 - **Aligner**: one **Tracks & Reference** list - pick the reference and the tracks to process in the same place.
-- A whole-timeline blanking scan no longer demands tens of gigabytes of free space for a pass that writes nothing.
+- A whole-timeline blanking scan no longer demands tens of gigabytes of free space.
 - The app is named CONFORM.TOOLS throughout - window title, installers, tray - and every installer now carries the product's branding.
 - Markers the app places are named for the app and the tool, with the detail in the note; markers you write yourself are left exactly as you typed them.
-- Offline Timeline Exchange conversions run on the same conversion engine as the website, on your machine, with the slower fallback used only where it is needed.
+- Offline Timeline Exchange conversions give the same result as the website, entirely on your machine.
 - Floating controllers switch tools from a row of icons, name themselves in the title bar and no longer waste a strip of empty space.
 - Columns can be dragged to resize and double-clicked to fit in every table.
 
@@ -362,7 +362,7 @@ First stable release of the 0.2.x line.
 ## 0.2.0 - 2026-04-15
 
 ### Added
-- **Aligner**: when confidence at the first frame is low, alignment is retried mid-clip and the better result is kept - with the marker placed at the frame actually used.
+- **Aligner**: a clip that does not match well at its first frame is tried again further in and the better result is kept - with the marker placed at the frame actually used.
 
 ### Changed
 - **Aligner**: the reference defaults to the top track that has clips, and repeated alignments are considerably faster.
