@@ -2,6 +2,77 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.8.0 - 2026-09-08
+
+### Added
+- **Reconformer** (beta, Indie and up): compare two cuts frame for frame, see every change on a map and in a list with conform vocabulary, then rebuild the new cut with the old version's grades, sizing and markers - with a per-clip choice of whose sizing wins and the previous cut kept on a disabled history track.
+- **Proxy Leak Detector** (beta, Indie and up): scores every shot against its source and marks the suspects.
+- Master QC: a Reports button reopens any earlier QC run - findings, decisions and the HTML report - so a job can be picked up again after other work, without rendering again.
+- Master QC: record a decision on any finding straight from its Status cell, in one click - fixed, artistic intent, best available, won't fix, not an issue, or your own words - with a note. Filter the list to all, open or resolved findings. Decided findings stop counting against the verdict, are listed in the report's Reviewed section, keep their markers in a review colour, and the decision survives re-running the QC.
+- Master QC markers now land on the clip they concern: picture findings on the video clip, audio findings on the picture clip they are linked to, and the timeline for conform findings and anything without a clip under it.
+- **Master QC**: a report editor. Give the report your own title, facility, client, project code, prepared-by, logo, notes and extra fields; switch every section on or off and put them in any order; choose whether evidence pictures are included, whether only issues are listed, the lowest severity to show, how many rows each check may take, which shots are tabled, timecode or frame numbers, page breaks, a dark or light page, and the paper size. The preview updates as you type; apply it to the filed report, print it to PDF, or save a copy anywhere. Save the layout as a named preset, and export or import presets between machines.
+- **Master QC**: pixel defects. Dead, stuck and hot pixels - and single-pixel-wide dead lines - are found on every render by default and shown on a map of the frame with a list underneath: where each sits, what colour it is stuck at, how many shots it was seen in, and the frame it was first spotted on.
+- **Aligner**: every result now carries evidence - the reference, the clip before, and the clip after alignment shown as a blend and as a difference - so you can see it landed without re-rendering. Click a thumbnail to enlarge; arrow keys step through the clips.
+- **Aligner**: undo a whole run. Every aligned clip's sizing goes back the way it was, and the markers the run placed are removed.
+- **Aligner**: export the results as a CSV.
+- **Aligner**: retry any clip from the list. Each row has a Retry action that measures that one clip again a different way - one step per click, with the clip put back to its original sizing before each attempt and the row saying which attempt produced the result.
+- **Aligner**: undo any single clip from its row; the run-wide Undo is still there.
+- **Aligner**: build keyframes for an animated shot (Pro). An Animated row can be turned into keyframed sizing: a sized timeline takes the original's name, with the original kept as "… (before sizing)". This replaces the separate Sizing Match page.
+- **Master QC**: one workspace. Findings are filtered by lane chips - picture, motion, shot, graphics, pixels, PSE, audio, conform, leader - that switch on, off or solo, each with a line explaining what it covers; the timeline can be scrubbed and drags the playhead with it; the findings list is taller, every timecode copies to the clipboard on click, and a Columns menu shows the What-to-do and Fix columns.
+- **Master QC**: a pixel defect takes you to its frame, boxes the defect in its own colour on the pulled frame and shows it magnified with a swatch of the pixel's colour; a PSE event takes you to its frame and suggests a resolution.
+- **Master QC**: pixel defects are grouped per shot - one finding lists every pixel in the shot, each magnified in the preview and ringed on the frame; the report shows each shot's own thumbnail with just its defects marked.
+- **Master QC**: the report editor can set the filmstrip's tile size and density.
+- **Settings**: the offline license opens from the Account card, the acknowledgements live under About & Support, and the tool preferences sit with Appearance & Window.
+- **Master QC**: the HTML report is always the printable light page, records which DaVinci Resolve and render-plugin versions produced it, and lists a dead line once rather than once per pixel.
+- **Blanking Detector**: auto-fix during a full scan (Advanced Settings). Each flagged clip gets the smallest zoom or reposition that clears the blanking as it is found, and the marker says what was adjusted. Off unless you switch it on.
+- **Copy Grades**: source and destination are picked on one track list, low to high with V1 first, the way the Aligner picks its reference. Picking a role on the other role's track swaps them.
+
+### Improved
+- Master QC, Proxy Leak Detector and Reconformer keep their working data in the app's private data folder; only the HTML report is filed in your Movies folder (or your chosen scratch location), and earlier reports move over on their own.
+- Aligner: a shot that moves is written as keyframes that reproduce the move frame-accurately, with no more keyframes than it needs; the render plugin is used whenever it is installed, with an automatic fallback when it is not; a drift that left most keyframed clips un-keyframed on 23.976 fps timelines is fixed.
+- Reconformer: a change map with editing vocabulary (moved, slipped, trimmed, split, replaced, inserted, deleted, retimed, reframed, regraded), inline sizing decisions, a scrubbable preview, and A / B defaulting to the open timeline and the next one.
+- While a tool is in beta, its Pro actions are open to Indie subscribers.
+- The app grows to a working size when Master QC, Reconformer or Edit Index + starts a job (Settings toggle).
+- Scrubbing the QC timeline shows the frame under the playhead (filmstrip, or the movie itself for a single-clip timeline). Needs render plugin 1.4.8.
+- Aligner: re-aligning a clip keeps the sizing it already carried, the reference's crop is followed, heavy punch-ins are found, and Align All builds a <timeline>_ALIGNED copy with the moving shots keyframed.
+- Master QC leaves preview: it is available to every Indie subscriber (still marked beta while it settles).
+- Aligner with the render plugin: a clip the first pass cannot settle is measured again in the same run, so every clip ends aligned, animated, stabilised or an honest error - never a silent mismatch. Burned-in graphics and subtitles no longer throw a match off, short shots are judged on what they have, and sources that sit at a very different zoom from the reference are matched (needs render plugin 1.4.7).
+- Aligner: shots that were stabilised are called out, runs are faster, and the results list is taller.
+- Master QC: audio findings show the loudness trace around the moment; Enlarge opens at a third, click expands, click again closes, and next/previous wrap around; pixel callouts are squares; a successful auto-fix marks the finding Fixed; the blanking fix corrects a pan before it scales.
+- Master QC: Enlarge fills the preview; the report filmstrip is laid out like Resolve's Lightbox with a timecode per row and a columns slider; the aspect check lists every aspect found; the Advanced settings choose whether markers go on the timeline (default) or on the video and audio clips; old reports can be deleted from the Reports list.
+- The Master QC report is set in the conform.tools typeface and carries the CONFORM.TOOLS wordmark; a Pro report can carry your own logo and facility details instead.
+- Blanking Detector: auto-fix during scan lives in Advanced Settings; fixing a clip turns its markers to the resolved colour; the results columns are sized sensibly; every list can be sorted by its # column.
+- A Master QC fix or render puts DaVinci Resolve back on the page you were working on.
+- Master QC: findings read shorter and never repeat the clip or check name; several dead pixels on one shot are one finding listing every pixel; every pixel finding has a timecode and a frame; a timeline gap is never reported as clipping or black.
+- The Master QC timeline playhead follows the pointer exactly at every UI scale, can be grabbed anywhere along its line, and the hover preview never hides behind the next section.
+- Tools still being finished carry a BETA badge; truncated table cells show their full text on hover; every Master QC control has a tooltip.
+- **Aligner**: every clip is matched away from its cut, where dissolves, flash frames and head handles live, so a transition no longer spoils the match.
+- **Aligner**: Verify now catches a wrong orientation. When the aligned picture only lines up with the reference mirrored, the flip is undone instead of pan and tilt being "corrected" on a mirrored picture, and a clip whose verification does not land is matched again and kept only when that lands closer.
+- **Aligner**: sub-pixel precision is now opt-in and stricter - it is kept only when it lands a better match than the first measurement. Switch it on next to Detect animated moves when you want it.
+- **Aligner**: when a clip is refused as a mismatch, or cannot be measured at all, the result says why in plain words - for example a stretched or anamorphic zoom, or a frame too flat or dark to read.
+- **Master QC**: a missing slate is a warning, not a failure, and the expected slate fields are shown against what was read from it.
+
+### Fixed
+- Edit Index +: the search builder's operator and colour menus no longer close or ignore a click when the table refreshes underneath them.
+- Turning off Show Dev Features in Settings now hides every development-only control.
+- Aligner with the render plugin: with DaVinci Resolve left on the Deliver page, the reference could be analysed in place of the clips and everything looked matched. That is fixed, and an identical-looking result is never reported as a match.
+- Aligner: pan and tilt land exactly on sources whose size differs from the timeline; a failed retry no longer worsens the pose; a wrong-scale result with the render plugin is fixed.
+- Master QC: a dissolve is no longer reported as an edit without a picture change.
+- **Master QC**: red and blue stuck pixels are now caught, not only bright or dark ones.
+- **Master QC**: far fewer false pixel defects - a specular highlight on a locked-off shot or a one-pixel graphic line is no longer reported.
+- **Master QC**: the timeline playhead lands exactly under the pointer at every interface scale; the "Copied" hint on a timecode is no longer cut off.
+
+### Changed
+- The render plugin bundled for offline installs is the signed 1.4.8 build.
+- Master QC no longer reports the black frames of a timeline gap as clipping, illegal blacks, a freeze or a black-frame finding. A gap is noted once, as a gap.
+- **Subscriptions**: Master QC is an Indie tool. Batch QC, non-default spec packs, the white-label report and keyframe sizing are Pro.
+- The DaVinci Resolve render plugin is now version 1.4.6 and installs from the app, including on machines without internet access. In Resolve it has no settings panel, and everything it produces is simply named CONFORM.TOOLS - in the Deliver page it shows as CONFORM.TOOLS. It now checks audio as well as picture, reports per shot, finds pixel defects far faster, and is what the Aligner uses when it is installed.
+
+## 0.7.10 - 2026-09-05
+
+### Fixed
+- **Free trial**: the app now honours your free trial. A new account, or one whose trial we have extended for you, used to open with every tool locked even though the website showed the trial running; the app now unlocks the same tools for the same days, and Settings shows when the trial ends.
+
 ## 0.7.9 - 2026-09-02
 
 ### Fixed
