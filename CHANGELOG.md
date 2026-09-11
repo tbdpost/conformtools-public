@@ -2,6 +2,18 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.8.1 - 2026-09-10
+
+### Added
+- **Reconformer: Drop in VFX** (beta, Indie and up; Drop in is Pro, free in beta). Pick the timeline and a bin of finished comps, and every comp is matched to its plate on the cut - by the shot id in its name, then by source timecode - with nothing rendered. What is left can be found by the picture (the subject of a green-screen plate survives the composite) or placed at the playhead by hand. Drop in puts every matched comp on a new video track over its plate, handles trimmed, the plate's reframe carried when the sizes agree, a marker on each; Disable plates switches the plates off underneath, and Undo takes it all back.
+- **Resolve Renamer** now has every step the Image Sequence Renamer has: Remove Characters (a number of characters from the start, the end, or a position), Insert Text at a position from either end, Add Date / Time, wildcards in Find & Replace, a Match Case toggle on Regex Replace, Capitalize Words, and a step size for Sequential Numbering. Two items that would end up with the same name are marked in the preview and left alone.
+- **Image Sequence Renamer**: Remove Characters, Insert Text, Add Date / Time, Whole Word and Wildcards on Find & Replace, and Capitalize Words - all on the name part, never the frame number or the extension.
+- **Reconformer: Conform from media** (beta, Indie and up). Rebuild a cut from the media itself: pick the reference cut and a bin or a string-out of the footage, and every shot is found in the source by eye - the same clip used twice, a repeated take, a speed change, nothing - with its pan, tilt, zoom and flip measured in the same pass. A reframed shot is still found, look-alike takes are told apart, a reframe cut hidden inside continuous footage is found and cut, and black between cuts is left empty. Build the conformed timeline (Pro, free in beta) with the reference kept on a disabled track above for difference mode; what was learned about a source is kept per project and reused by later conforms.
+
+### Fixed
+- Utilities: a long tool name no longer overlaps the version badge on its card.
+- **Reconformer**: a reframe on the second half of a through edit is carried. When the old cut razored a shot mid-take and reframed one piece, and the new cut carries that shot as one clip, the rebuilt timeline is now cut at the same frames and each piece keeps its own sizing; the change list shows the pieces as Split, and Undo splits joins them back. A through edit under a dissolve or on a retimed clip is left whole, and the summary says why.
+
 ## 0.8.0 - 2026-09-08
 
 ### Added
