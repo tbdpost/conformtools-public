@@ -2,6 +2,15 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.8.2 - 2026-09-13
+
+### Added
+- **Reconformer: speed effects.** The change list now says exactly what a shot does - 50%, 200%, a freeze frame or a reverse - read from DaVinci Resolve rather than worked out from the cut, so a shot whose media runs at another frame rate than the timeline is no longer called retimed when it is not, and neither is a shot that was simply trimmed. A speed the old cut carried is put back on the rebuilt one: same frames, same piece of source, same speed, checked after it is written, with nothing else on the timeline moved. A speed ramp is named as a ramp - the shot and its source range are carried, the ramp is left for you to set by hand, and the run says how many are waiting. A through edit on a retimed shot can be split and carried now.
+- **Reconformer: compare against an edit list** (beta, Indie and up). Either side of a comparison can be an EDL, XML, AAF, AVB, OTIO or DRT instead of a timeline - browse for the file or drop it on the page. It is read on your machine and nothing is rendered: every clip is paired the way a conform artist would, by media, reel and source timecode, then file, then name, and each row says what matched it and how sure. Three ways to compare: Edit only (seconds), Edit, then picture where needed (the default - only the stretches the edit cannot settle are rendered), or Picture (both timelines end to end). A clip several old clips could be is listed Unresolved with its candidates; Verify picture settles it from the picture. Build works from a file too: the list is imported into the project, conformed to the media pool, and the reconformed timeline is built from it with the old cut's work carried across. A list that states no speed is never read as a retime.
+
+### Fixed
+- **Windows**: a machine that once hit a DaVinci Resolve start-up crash could stay stuck on "Resolve isn't detected" through every later update, even after the update that fixed the crash. The app now tries again after such an update instead of standing by its earlier verdict.
+
 ## 0.8.1 - 2026-09-10
 
 ### Added
