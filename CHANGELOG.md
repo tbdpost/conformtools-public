@@ -2,6 +2,28 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.0 - 2026-09-26
+
+### Added
+- **Type to search in menus.** Long lists - render presets above all - open with a search box: start typing and the list narrows to what matches, in any word order, then pick with the arrow keys and Enter. Typing on a closed menu opens it already filtered.
+- **The CONFORM.TOOLS render plugin sets itself up.** Its render preset is added to DaVinci Resolve for you when the plugin is installed, and checked again whenever the app connects to Resolve or you switch projects - there is nothing to build by hand in the Deliver page. Your own Deliver settings are left exactly as they were. The setup guide now says when Resolve still has to be restarted to load the plugin, and the manual steps name the codec as it appears: CONFORM.TOOLS, the only one listed.
+- **Mapped mounts apply to render destinations.** The output folder you pick or type in the Marker Batch Renderer, VFX Pulls and Edit Index +'s render queue follows Settings > Mapped Mounts before DaVinci Resolve sees it - pick a folder under /media and Resolve is given the matching /Volumes path - with a note showing what it was mapped from.
+- **DaVinci Resolve 21.1:** Edit Index + can set fade-in and fade-out lengths on the selected clips, normalize their audio to a loudness standard, and select the clips you have selected in Resolve; the Blanking Detector reads the timeline's own output blanking and never reports those bars as a problem, and can set or clear it; the Reconformer carries fades onto the rebuilt cut. Controls appear only on a Resolve that supports them.
+
+### Changed
+- Track lists everywhere now read like your timeline: video tracks with V1 at the bottom, audio tracks with A1 at the top.
+- **Output Sorter**: hidden files are always left out of a sort; the switch for them is gone.
+
+### Improved
+- **Reconformer: conform from media remembers what it has read.** Point it at as many bins as you like - sub-bins come along unless you say otherwise - or at several string-outs, all ticked on one searchable list. Before it starts, the page says how much of the material it already knows and how much is new, what has been added, changed or removed in each bin since last time, and whether the reference has moved on; reading only the new material is the default, and reading everything again is one click. A clip that cannot be read no longer ends the run - it is named, with what DaVinci Resolve said about it and the shots it probably cost, and the rest carries on; a clip that only has proxies is read from those. The reference is read once and afterwards only where it changed, so a shot that merely moved costs nothing. What the tool remembers is browsable bin by bin, and can be forgotten; a run you cancel tells you what it kept.
+- **Utilities** are grouped into sections you can arrange: collapse a section, hide it, or drag the sections into the order you work in, and the app remembers it. The tools that need no editing software have a section of their own.
+- **Timeline Exchange (offline)**: conversions are more faithful - titles now carry between DaVinci Resolve, Avid and Premiere, speed ramps out of Avid bins land where the editor put them, and third-party effect settings survive more often. When a format cannot carry something from your timeline, the converter now says what it left out, under the file it wrote.
+
+### Fixed
+- **DaVinci Resolve 21.1 quit at the end of All Clips Timeline.** With "remove audio" on, Resolve 21.1 closed without a message as the new timeline was finished - on macOS and Linux - and the same could happen in Add Handles and when Edit Index + builds a timeline from a selection. The timeline is now finished in a way 21.1 accepts, and the empty audio tracks are removed as before. If they ever cannot be removed safely they are left in place, empty, and the result says so; Resolve is never put at risk for a tidy track list.
+- **Timeline Exchange (offline)**: a Flame archive converted on your machine is now a proper zip holding the two files Flame restores from.
+- The image-sequence tools work without DaVinci Resolve running. Renaming or patching an image sequence and reopening a filed Master QC report used to fail with "Could not connect to DaVinci Resolve" whenever Resolve was closed, and never worked on a machine without it.
+
 ## 0.8.2 - 2026-09-13
 
 ### Added
