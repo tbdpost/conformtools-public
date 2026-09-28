@@ -2,6 +2,12 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.1 - 2026-09-28
+
+### Fixed
+- **Installing the CONFORM.TOOLS render plugin** checks there is a build for your computer before it downloads anything, and says so plainly when there is not, instead of downloading a build for another platform and failing.
+- **Settings**: the render plugin row no longer squeezes its description into a narrow column while it shows a message.
+
 ## 0.9.0 - 2026-09-26
 
 ### Added
