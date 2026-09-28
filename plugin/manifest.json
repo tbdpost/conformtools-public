@@ -9,6 +9,14 @@
       "sha256": "04b2f019f98ed422313da31feb4b99687759bccf74cbb74aff5e0c27e5e1c7c8",
       "min_os": "12.0",
       "notarized": true
+    },
+    "linux-x86_64": {
+      "bundle_url": "https://github.com/tbdpost/conformtools-public/releases/download/plugin-v1.4.8/conform.tools-plugin-1.4.8-linux-x86_64.zip",
+      "sha256": "a45fd570c7df900a8b762d8001b440d0a5d90f1db2e45eb323b5836da81abebc"
+    },
+    "windows-x86_64": {
+      "bundle_url": "https://github.com/tbdpost/conformtools-public/releases/download/plugin-v1.4.8/conform.tools-plugin-1.4.8-windows-x86_64.zip",
+      "sha256": "3b73e7f7cd08a1a23a7f24621b2ed86b1d4809a54e9593c1de4ea2abb918db34"
     }
   },
   "bundle_url": "https://github.com/tbdpost/conformtools-public/releases/download/plugin-v1.4.8/conform.tools-plugin-1.4.8.zip",
