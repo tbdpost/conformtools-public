@@ -2,6 +2,15 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.2 - 2026-09-29
+
+### Changed
+- **The CONFORM.TOOLS render plugin's preset is now simply called CONFORM.TOOLS.** A preset from an earlier version is renamed for you, keeping anything you saved into it.
+
+### Fixed
+- **The app no longer spins on "connecting" when DaVinci Resolve stops answering.** If Resolve stops responding partway through a request, CONFORM.TOOLS now says so in the header and on the tool pages, and reconnects by itself as soon as Resolve answers again or is restarted - no need to restart CONFORM.TOOLS.
+- **Very large timelines** no longer slow the app down while it follows your edits in DaVinci Resolve.
+
 ## 0.9.1 - 2026-09-28
 
 ### Fixed
