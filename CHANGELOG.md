@@ -2,6 +2,21 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.3 - 2026-10-13
+
+### Added
+- **Edit Index + finds shots with grade versions.** Two new columns - how many grade versions a shot has and which one it is showing - sort and export like any other, and the search can find shots that have extra versions, a number of them, or a version by name.
+- **Marker Utility: send one marker to a track.** Move or copy just the marker under the playhead - or any one marker from the list - to another track or back to the timeline, without taking every other marker over that clip with it.
+- **Marker Batch Renderer: the render preset fills in the filename.** Picking a render preset fills the codec, bit depth, resolution and colour fields your naming convention already uses.
+
+### Changed
+- **All Clips Timeline** uses the bin your open timeline lives in when the selected bin holds no timelines, and builds the new timeline there.
+- **Timeline Exchange (offline)** is brought up to date with the online converter, and says plainly that it is the offline version.
+
+### Fixed
+- **Marker Batch Renderer**: Clear Rendered and Clear Unrendered no longer empty the whole render queue - each clears only its own jobs, and a render in progress is never touched. The Date and Time in a filename now follow your computer's clock and time zone instead of freezing when the page opened or using tomorrow's date in the evening.
+- **Marker Utility**: on 23.976 and other fractional frame rates, the playhead was read one frame early, so "current marker" actions could miss the marker you were parked on. They now also find a marker anywhere along its length, not only on its first frame.
+
 ## 0.9.2 - 2026-09-29
 
 ### Changed
