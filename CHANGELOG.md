@@ -2,6 +2,27 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.4 - 2026-10-15
+
+### Added
+- **All Clips Timeline can stack takes in place.** Turn on Stack takes in place and every use of a shot keeps its own range, lined up by source timecode, with overlapping uses stacked onto the tracks above - instead of one piece spanning them all.
+- **All Clips Timeline finds duplicate footage.** When the same shot is in your edit from more than one media pool clip - two media manages of the same card, say - each use is marked, and Reduce to best version builds the new timeline from the one copy that holds every frame you used. Your edit is untouched.
+- **Marker Utility: clip markers to other instances.** Copy or move the clip markers on one track onto every other instance of the same shot - re-ordered, on another track, or from another media-managed copy - matched by source timecode so each lands on the frame it belongs to.
+- **Marker Detail.** A small window, popped out from the floating Marker Utility, that shows the full name and note of the marker at the playhead - bright when you are on it, dimmed when you have passed it - with the next marker one click away, and every marker on a frame when several share it.
+- **Edit Index + reads local and remote grade versions.** The Vers column shows local / remote counts, and a new L/R column says whether each shot is showing a local or a remote version.
+- **Reconformer: On A / On B.** Flip DaVinci Resolve between the two versions you are comparing, landing on the same frame of the same shot.
+
+### Changed
+- **New All Clips timelines start at 00:00:00:00**, and the settings source and the layout are toggles alongside the other options.
+- **Timeline Exchange (offline) and DataCalc** are brought up to date with the latest online versions, and the offline converter is further hardened.
+
+### Fixed
+- **Marker Batch Renderer** no longer reports no markers when it opens before DaVinci Resolve has answered - it waits a moment and reads again - and Start Render renders only the jobs that have not rendered yet, instead of starting completed ones again.
+- **Marker Utility** follows the playhead again.
+- **Aligner**: Retry on a failed shot works again.
+- **Image Sequence Patcher**: the Patch button works again.
+- **Edit Index +**: column headers you cannot sort by no longer show a text cursor.
+
 ## 0.9.3 - 2026-10-13
 
 ### Added
