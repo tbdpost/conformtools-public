@@ -2,6 +2,27 @@
 
 What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
+## 0.9.5 - 2026-10-19
+
+### Added
+- **All Clips Timeline: order by source timecode.** A new option lays the clips out in the order they were shot instead of the order the edit uses them.
+
+### Changed
+- **No tool ever overwrites a timeline.** Every timeline a tool creates gets a name no other timeline in the project has: a fresh timestamp first, then _02, _03 and so on. The Aligner and the Reconformer used to replace an earlier _ALIGNED / _RECONFORMED / _CONFORMED timeline; each run now lands beside the last one.
+- **Copy Grades keeps shared grades shared.** A grade on a remote version is never copied over: the destination is switched to that same version, so nothing other timelines use is rewritten. A local grade is copied only when the clip is certainly the same shot; otherwise the clip is marked and left alone. Edit Index +'s Copy Grades follows the same rule.
+- **All Clips Timeline: stacked takes sit on one uncut V1.** With Stack takes in place, V1 holds each shot as a single piece across every frame its takes use, and every take sits above it.
+- **Reconformer**: the V1 HISTORY track shows the old cut as it looked, with each piece's grade and sizing, so a difference view shows only what really changed. A grade from a shared version is carried by switching the new clip to that same version.
+- **Resolve Renamer is now Clip Renamer.** Same tool, same licence.
+- **The app icon follows each platform's conventions** - the same size as its neighbours in the macOS Dock, and crisp at every size on Windows and Linux.
+- **Timeline Exchange (offline) and DataCalc** are brought up to date with the latest online versions.
+
+### Fixed
+- **Marker Batch Renderer**: the marker colour counts at the top always match the marker list after a refresh, and Start Render also starts a job whose render was interrupted (it used to look busy forever). Finished jobs are still never re-rendered.
+- **Marker Batch Renderer**: handles set on the page reach the render again.
+- **Add Handles** no longer creates a backup bin; it only adds the new _HANDLES timeline.
+- **Copy Grades and the Reconformer**: carrying sizing onto a clip whose zoom is unlinked keeps both the across and down values.
+- **Sign-out** can no longer be undone by a sign-in that was still finishing in the background.
+
 ## 0.9.4 - 2026-10-15
 
 ### Added
