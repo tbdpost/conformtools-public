@@ -1,0 +1,15 @@
+{
+  "version": "0.10.0-beta.10",
+  "notes": "Release v0.10.0-beta.10",
+  "pub_date": "2026-10-22T18:57:25.716229Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.10/conform.tools.Beta_0.10.0-beta.10_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PcytKaDF5dWdPdSt2U003enk5SCtmTnRlNUh6ZjZyMG9RdDIwMHdub25GeWQ1d01HWG9lR1lxNTB3ZjFwaVkzR2ZvbkNHR3FlbnNlNjJadnRHdy91Q1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjk0OTY1CWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKZHp1SmFHMWRBaHBjTlhsS1FnTzlGUllsRFJDOU8zNEdjTnV4TnRubEw0MlRGdWUrdStWeFhBRzNrWW9hdjBWQjExSGd3WTlqelEvTExFVXJNSFhQQ2c9PQo="
+    },
+    "darwin-x86_64": {
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.10/conform.tools.Beta_0.10.0-beta.10_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29Pc3lqZlluajNTT3dmeDU1VUkxMHQwdFRVVEhBM2UxUmhwTy9hRWZ3WTR1OGhGVndkbSs1S08zeVZmQ1hmVlUwWFRTWnJ1SVZQVStqNXFYWmp5RWVIRnc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNjk1MDEyCWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKUjVjUnlKK3BTVWU5WTVmNkdDQ2ZaUkZQRzNpQ0JYMVFwQjBNTXFmTStLOHpOUkpIc1FUdjU4UFFRQ2ZMTlVTZjEzbWJ0eXc2anM3Y2NxbFhEL2lWRHc9PQo="
+    }
+  }
+}
