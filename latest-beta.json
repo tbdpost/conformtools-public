@@ -1,15 +1,15 @@
 {
-  "version": "0.10.0-beta.11",
-  "notes": "Release v0.10.0-beta.11",
-  "pub_date": "2026-10-22T21:11:08.207937Z",
+  "version": "0.10.0-beta.12",
+  "notes": "Release v0.10.0-beta.12",
+  "pub_date": "2026-10-22T21:36:37.313145Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.11/conform.tools.Beta_0.10.0-beta.11_aarch64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczlZR0NjdFk3TG9uUGcxSHlsNEk2bTlUL0loemxKZlE0K0xjMDdxK09oYUt0UW16WXA0OFN1TlFCM3ZPMkFnVUJSMk5oeFgvVnpkWFdGcHFRSmpRend3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzAzMzIwCWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKNXlrV1ovcjZCSnBsVHRqR0V5Qkl3bnIxOVg1ZDZuYUM1VzcrK3hhekhQSUZXUm1pVG5yTEF6MWZaM0Nhb2xJUTdGNkQ4Mm5raUtGSHA5S3puS3FnQWc9PQo="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.12/conform.tools.Beta_0.10.0-beta.12_aarch64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczZTcjhoQ3NYNnhmVHd3enN2Y09XMjFMYVJld3UveXVKNC9XU1NGemVhVnhnQnB0VU5YWnNRVEhJTXJuTlBNeGRGbWVxT2NpVjM0OW1rbVEzc1hnQndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzA0ODU5CWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKOXJrK0lxMXZWblVNdUtFekwyOUdtWHRPbklkdUczaklQYnV0L1Q4eC8yQ3QxalBia0plenJZKzJxWm5JVHVnZ0o5TTdXdVZSNzNlTG5NNjc3Z21UQnc9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.11/conform.tools.Beta_0.10.0-beta.11_x64.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PczdFMUlhTUhnTnVXMTFXdFZYU0wxVWhlb0hlcWxucTJjMUZKanRpbS81M2NqSTJyZ2YxUEViWExvbnpjQ1lkRkV2SCtMU0RDTlUvUklnSmFzUWpBa3dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzAzMzU4CWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKZlBZVnRjSHZrOGV6TXBLS201S0w0MTNqNHhDT1RON05JeklHVWhMY3JaQ1ZoL0FvNE1YM3lMTTF5QTcxWlFoWS9IaXpINHNDbzl0RVRrczIxdjJSQVE9PQo="
+      "url": "https://github.com/tbdpost/conformtools-public/releases/download/0.10.0-beta.12/conform.tools.Beta_0.10.0-beta.12_x64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRVk0yZEtQb29PcytWYmxELys2bXdsS3VycFZZcTRSTlFrMTBzK0lNRGtDYWtJekZJYVdWdXdzdEtPeUF4aGlLUlNzZER0cG1rWGpUSGVyNFZxUWVuYVhqbXo5V2QvS1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNzA0ODg3CWZpbGU6Y29uZm9ybS50b29scyBCZXRhLmFwcC50YXIuZ3oKU1A3Z20rM0xOVE5YWmdzNjRnMm5ieHpsQWMraHYxc2tydjhRVG1rd29NWjdhakhObGZjWFJGUEYxOXVYTXdKdU9nUEgvbjZsL0RBL1hhamhaZFZMREE9PQo="
     }
   }
 }
