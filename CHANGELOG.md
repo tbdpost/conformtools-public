@@ -1,27 +1,90 @@
-# CONFORM.TOOLS Changelog
+# conform.tools Changelog
 
-What changed in each release of the CONFORM.TOOLS desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
+What changed in each release of the conform.tools desktop app. Downloads: https://github.com/tbdpost/conformtools-public/releases
 
-## 0.9.5 - 2026-10-19
+## Next
+
+## 0.10.7 - 2026-11-16
 
 ### Added
-- **All Clips Timeline: order by source timecode.** A new option lays the clips out in the order they were shot instead of the order the edit uses them.
+- **Send to a portal with the app.** On a Timeline Exchange portal page, "Send with the app" hands the send to the conform.tools app on your computer: it takes the media straight from where your timeline points, keeps the computer awake, and picks up where it stopped if the network drops. You can close the tab; the page shows progress while it is open. The app starts quietly at login (no window) so it is there when a portal page asks; it sits in the menu bar / system tray.
+- **Settings › What's new.** The notes for each version, in the app.
 
 ### Changed
-- **No tool ever overwrites a timeline.** Every timeline a tool creates gets a name no other timeline in the project has: a fresh timestamp first, then _02, _03 and so on. The Aligner and the Reconformer used to replace an earlier _ALIGNED / _RECONFORMED / _CONFORMED timeline; each run now lands beside the last one.
-- **Copy Grades keeps shared grades shared.** A grade on a remote version is never copied over: the destination is switched to that same version, so nothing other timelines use is rewritten. A local grade is copied only when the clip is certainly the same shot; otherwise the clip is marked and left alone. Edit Index +'s Copy Grades follows the same rule.
-- **All Clips Timeline: stacked takes sit on one uncut V1.** With Stack takes in place, V1 holds each shot as a single piece across every frame its takes use, and every take sits above it.
-- **Reconformer**: the V1 HISTORY track shows the old cut as it looked, with each piece's grade and sizing, so a difference view shows only what really changed. A grade from a shared version is carried by switching the new clip to that same version.
-- **Resolve Renamer is now Clip Renamer.** Same tool, same licence.
-- **The app icon follows each platform's conventions** - the same size as its neighbours in the macOS Dock, and crisp at every size on Windows and Linux.
-- **Timeline Exchange (offline) and DataCalc** are brought up to date with the latest online versions.
+- **Smaller Windows installer.** About 70 MB instead of 276 MB: it fetches Microsoft's WebView2 only when the PC does not already have it. For a PC with no internet, the full offline installer is a separate download on the download page.
 
 ### Fixed
-- **Marker Batch Renderer**: the marker colour counts at the top always match the marker list after a refresh, and Start Render also starts a job whose render was interrupted (it used to look busy forever). Finished jobs are still never re-rendered.
-- **Marker Batch Renderer**: handles set on the page reach the render again.
-- **Add Handles** no longer creates a backup bin; it only adds the new _HANDLES timeline.
-- **Copy Grades and the Reconformer**: carrying sizing onto a clip whose zoom is unlinked keeps both the across and down values.
-- **Sign-out** can no longer be undone by a sign-in that was still finishing in the background.
+- An MCP licence check on a machine whose ID cannot be read no longer says the licence is for another machine.
+
+## 0.10.1 - 2026-11-06
+
+The new conform.tools app. It replaces 0.9.5 when it updates, and it runs 100% offline: everything happens on your machine and nothing is uploaded. It is part of the **App plan** (US$199 a month): sign in with an account on that plan, or import a machine licence in Settings. Your machine licence, if you have one, carries over.
+
+### Added
+- **Home.** Your tools are down the left. Start typing a tool's name on Home and it lights up there; Enter opens it.
+- **Align Clips.** Fits each clip's framing to a reference track (the offline, a client render) in DaVinci Resolve, for the whole timeline, the clip under the playhead or the clips you pick. Push-ins and other animated moves are measured on every frame and written as a few keyframes on Resolve's own ease.
+- **Write the sizing where you need it.** Edit page transform (survives an XML back to Premiere), Colour page Input Sizing, or the Sizing of any node. Input and node sizing go onto a new "conform.tools aligned" grade version, so the colourist's grade, local or remote, is kept; Undo puts the clip back.
+- **Reconform builds the new cut with your grade.** Every clip of the new cut takes the grade, sizing, crop, composite, clip colour and clip markers of the clip in the colour timeline that holds the same frames, on a copy of the new cut (the cut itself is never edited). A shared remote grade is selected, never copied over. On A / On B puts Resolve on that moment in either cut. Or mark what changed on the colour timeline, as before.
+- **Timeline Exchange, offline.** The same page as conform.tools/timeline-exchange: read a timeline from any host and write it for another (Avid, Premiere, Resolve, Final Cut, Flame), on this machine. A format that cannot be written in reasonable time is reported, and the others still save.
+- **Windows.** Every tool runs on Windows too, Align Clips included, with ProRes, H.264 and HEVC read on the machine itself.
+- **No Python to install.** The app brings its own for DaVinci Resolve's scripting, on Mac and Windows.
+- **Resolve, read the way Resolve exports.** The timeline you have open is read through Resolve's own export (DaVinci Resolve Studio); conform.tools never reads your project library.
+- **Claude can drive the app.** With the conform.tools MCP connected, Claude opens a tool with its settings filled in, and what it runs shows in that tool's tab with its Apply.
+- **conform.tools, in lowercase.** The app's name, window, installers and Home are written conform.tools.
+- **Rename.** Batch rename timeline clips, timelines or media pool clips through an ordered list of steps (find and replace, regex, prefix, suffix, insert, remove, case, numbering, date), previewed row by row, in one undoable batch. Narrow it to the names a pattern matches, and numbering counts only those. Works in DaVinci Resolve and in Premiere Pro (clips and sequences). This is 0.9.5's Clip Renamer, moved up from Legacy.
+- **Add Handles.** A new timeline of every video clip strung out with handles either side (a negative number trims), clamped to the media's real length, in Resolve or Premiere. The new timeline takes the source timeline's settings, colour science, data levels and monitoring included, checked after, or it is not kept. 0.9.5's Add Handles, moved up from Legacy.
+- **Copy Grades.** Every clip on one track takes the grade from the clip above it, and as much else as you pick: sizing, crop, composite, clip colour, flags, clip markers, every local grade version, colour group, keywords. A grade is copied only when it is certainly the same shot; a shared remote grade is selected, never copied over. The whole timeline or just the clip at the playhead. 0.9.5's Copy Grades, moved up from Legacy.
+- **Unused Media.** The media pool clips no timeline uses, found by reading every timeline (Resolve's own usage count can lag): move them into one bin, take them out of the pool, or move the files themselves into a folder on disk, with Undo. Narrow by drives in or out, or by name. 0.9.5's Unused Media, moved up from Legacy.
+- **All Clips Timeline.** One timeline of every clip your timelines use (or every timeline in a bin), overlapping uses merged, handles clamped to the media, what compound and nested clips show included, duplicate footage marked or reduced to the best copy, a timeline per resolution if you like. Each clip is checked to have landed as built. 0.9.5's All Clips Timeline, moved up from Legacy.
+- **Marker Renders.** One render per marker of a colour, named by a delivery convention (Netflix NAM / DCDM, film reels, TV, conform.tools) or your own pattern, with handles, into that convention's folders; or just added to Resolve's render queue for you to start. Your render queue and Deliver settings stay as they were. 0.9.5's Marker Batch Renderer, moved up from Legacy.
+- **Edit Index+.** Every clip (and transition) of the open timeline as a table you search with the Edit Index grammar (fields, ranges, regex, `is:` questions, OR), then change the ones you keep in one undoable batch: clip colour, flags, enabled, markers, names, keywords, properties (sizing, composite, retime), metadata, fades (Resolve 21.1.1 does not save a fade set by a script: it is gone when the project is reopened, so the tool says so), audio level, normalize, grade versions, colour groups, cache. Save CSV of any list. 0.9.5's Edit Index +, moved up from Legacy.
+- **Reconform** (0.9.5's Reconformer, moved up from Legacy). The colour timeline (A) and the new cut (B): the change list by the edit (moved, trimmed, slipped, split, joined, retimed, reframed, inserted, deleted), with the picture checked by decoding both sides where the two cuts point at different copies of the media; B built with A's grade, sizing, crop, composite, colour, markers and speed, A's through edits cut on the build, A's or B's sizing chosen clip by clip, A's program kept on a switched-off HISTORY track, B as a file or a timeline; the build's sizing matched to B's picture; a build discarded; a page of the change list.
+- **Reconform: Drop in finished VFX.** Point it at a folder of comps: each is matched to its plate by the shot id in its name (VFX shot markers, plate names) or by its source timecode, checked row by row, and placed on a new VFX track over the plate with the plate's sizing. Build B also keeps A's program on a switched-off HISTORY track, and B can be a timeline file.
+- **Finishing QC** (0.9.5's Master QC, moved up from Legacy). Holds the master to a delivery spec (Netflix, Apple, Amazon, EBU R128, BBC/DPP, ATSC A/85 or a conform pack): rendered through the conform.tools plugin in Resolve, every frame measured after the grade, and the render checked against the timeline (a picture cut a frame off its edit, black on a clip, proxy media in the online, ungraded log shots, text in a textless master, the slate and 2-pop). Markers on the timeline or on the clips; a re-scan turns what got fixed green; decide each finding (fixed, artistic intent, best available, won't fix, not an issue) and it stops counting; several timelines at once; a one-page HTML report with the frame of every finding; reopen an earlier scan without rendering again. Or check any app's rendered master on this machine.
+- **Rename: files in a folder.** 0.9.5's Image Sequence Renamer is now a target of Rename: the same steps on the name part of every file (an image sequence's frame number and extension kept), the frame numbers offset or each sequence shifted to start at a number, previewed, then renamed on disk safely (frames can move onto each other's numbers; nothing is renamed over a file outside the batch) with Undo.
+- **Odd Image Fixer.** Stills with an odd width or height (most codecs and some apps refuse them; Resolve draws a black line) rewritten at even sizes in their own format, a row or column cropped or scaled to a maximum, colour profile and metadata kept, the originals kept beside them; optionally refreshed in Resolve's media pool. Undo puts them back. No app needed.
+- **Output Sorter.** A folder of deliverables filed into folders by a recipe: mixes and splits per project (0.9.5's built-ins and its MIXES_SPLITS droplet), one folder per stem, picture versions, by file type, by date, VFX by shot and version, or your own recipe file. Previewed file by file; nothing is ever overwritten; Undo puts every file back. No app needed.
+- **Image Sequence Patcher.** Fixed frames into an image sequence: the folders beside it with "patch" in their name hold frames named like the ones they replace; previewed frame by frame, the originals kept in `<sequence>_originalframes`, the patch folders filed under `zAPPLIED_PATCHES`, and Undo puts it all back. No app needed.
+- **Grade Tracer searches your other projects** (moved up from Legacy). Pick projects beside the open one: Resolve opens each in turn to find the earlier grades, and once more to bring the chosen ones back as grade files, then your project is open again as you left it. 0.9.5 could only list those matches; now they are applied, onto a local version.
+- **VFX Pulls** (moved up from Legacy): plates and reference rendered with your render presets.
+- **Markers** (0.9.5's Marker Utility, moved up from Legacy). Timeline and clip markers of the open timeline, in Resolve or Premiere: filter by colour, place, text or the playhead, then recolour, swap two colours, rename, note, keyword, find and replace, change the duration, delete, or move / copy them between the timeline and the clip, in one undoable batch. In Premiere a clip marker lands on the frame it shows at, even where the clip's frame rate is not the sequence's, and markers added since the last save are read too.
+- **Blanking** (0.9.5's Blanking Detector, moved up from Legacy). Clips whose sizing shows black inside the delivered frame, from each clip's transform (instant) or measured on its source frames, Resolve or Premiere. The fix is the gentlest that fills: a small tilt removed, a pan / tilt back over the edge, and a zoom only when neither does; fix one, fix the next, or all. The timeline's own output blanking counts as the delivered frame, and can be set from it (Resolve 21.1).
+- **Custom tools as recipes.** A tool someone made for you (us, or your own Claude through the conform.tools MCP) is one small file, and Claude adds it to the sidebar.
+
+### Your 0.9.5 tools are all still here
+- **Every one has moved up into Tools**: Align Clips, Timeline Exchange, Rename, Add Handles, Copy Grades, Unused Media, All Clips Timeline, Marker Renders, Edit Index+, Finishing QC, Blanking, Reconform, VFX Pulls, Grade Tracer and Markers (Marker Utility).
+- **Proxy Leak Detector is a spec in Finishing QC**: choose "Proxy leak (shots on offline media)" and only the shots still on proxy or offline media are listed and marked, each scored as before.
+- **Typing an old name on Home finds it.**
+
+### Fixed
+- **Every tool in the sidebar, each once.** Probe, Patch, QC, DCP and the rest were only reachable from Claude; now all are listed, in one list. Tools that do the same job are one tool with a choice at the top (Relink and Upres; Unnest and Resize as Rebuild Sequence; Make a DCP and Patch a DCP as DCP), and typing an old name on Home finds it.
+- **Reconform is one tool for a new cut:** carry the grade to it, mark what changed, compare two renders, drop in finished VFX, cut in returns, or conform the cut from media (what Auto Conform did).
+- **Undo works after every Apply** in Rename, Markers, Edit Index+, Copy Grades, VFX Pulls and Unused Media.
+- **A result always matches what you see:** changing a setting, the playhead or the timeline clears the old result instead of leaving it up.
+- **Nothing to do says why** (no shots differ, no markers of that colour, every clip already named) instead of an empty list.
+- **Copy Grades says which shots it will skip** because they are not the same shot, before you apply.
+- **Align Clips uses the reference track you pick**, never a guess, and the monitor opens on Normal.
+- **Sync Dailies is no longer in the app.**
+- **Graphics Toolkit renders in the app.** It could not start its render before.
+- **Timeline Exchange opens the timeline you give it** (a .drt read as empty: "invalid zip data").
+- **Reconform: two timeline files to one** writes the new cut with the old one's work (it wrote a compound clip instead) and shows the change list (deleted, trimmed, slipped, moved, inserted…), saved as a page if you like.
+- **Names with & in them** stay as they are (they turned into &amp; and grew every time).
+- **A tool says when its app is not connected** before you press Run, with how to connect it.
+- **Results read the same everywhere:** what happened in a line, the files written with Copy path, the details folded away; checks as PASS / FAIL.
+- **Tables fit** (long names are cut, whole on hover), **timelines open on V1**, lists of files can be reordered, and the scrollbars are ours.
+- **One tool open at a time, whoever opens it.** A tool Claude opens takes the place of the open one, as it does when you click, instead of adding tabs.
+- **Odd Image Fixer** ran into an error before finding anything; it finds and fixes odd-sized stills again.
+- **Patch** writes into the folder you choose, made if it is not there yet, instead of a file named after the folder.
+- **Running** names each job by its tool (Deliverable QC, Probe…) and no longer lists a job whose app was quit or crashed as starting forever.
+- **Trim Media** says what is wrong in timecode: the in or out you typed and where the file starts and ends.
+- **Compare Cuts** says it compares two renders when it is given a timeline, and points to Reconform for two timelines.
+
+### Not in this version
+- DataCalc.
+- Node Stack Transfer is retired: DaVinci Resolve 21.1 no longer lets a script copy a node tree, which is what it was built on.
+- Floating tool windows and the Marker Detail window.
+- Conform Connect inside the app: use it at conform.tools.
+- On Windows, 10-bit 4:2:2 H.264 (some cameras record it) cannot be read yet: Windows has no decoder for it.
 
 ## 0.9.4 - 2026-10-15
 
