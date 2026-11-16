@@ -4,11 +4,13 @@ What changed in each release of the conform.tools desktop app. Downloads: https:
 
 ## Next
 
+### Added
+- **Settings › What's new.** The notes for each version, in the app.
+
 ## 0.10.7 - 2026-11-16
 
 ### Added
 - **Send to a portal with the app.** On a Timeline Exchange portal page, "Send with the app" hands the send to the conform.tools app on your computer: it takes the media straight from where your timeline points, keeps the computer awake, and picks up where it stopped if the network drops. You can close the tab; the page shows progress while it is open. The app starts quietly at login (no window) so it is there when a portal page asks; it sits in the menu bar / system tray.
-- **Settings › What's new.** The notes for each version, in the app.
 
 ### Changed
 - **Smaller Windows installer.** About 70 MB instead of 276 MB: it fetches Microsoft's WebView2 only when the PC does not already have it. For a PC with no internet, the full offline installer is a separate download on the download page.
